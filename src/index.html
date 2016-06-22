@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Universe CSS3</title>
+ 
+</head>
+
+<body>
+<div class="universe" ng-app="myApp">  
+  <div class="sun"> </div>
+  <div class="moon-orbit">
+    <div class="world-container"> 
+      <div class="world"> 
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+      </div>
+      <div class="moon"> </div>
+    </div>
+  </div>
+  <div class="world-orbit"> </div>
+  <div class="star-shell">
+    <div class="star" ng-repeat="i in [] | range:200">.</div>
+  </div>
+</div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
